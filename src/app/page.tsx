@@ -8,7 +8,6 @@
 
 import { Metadata } from "next";
 import Hero from "@/components/hero";
-import CustomAccordion from "@/components/ui/accordion";
 
 
 export const metadata: Metadata = {
@@ -27,7 +26,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <Hero page={"Home"} title={"Hello there"} />
+      <Hero />
 
       {/* <CustomAccordion /> */}
     </main>

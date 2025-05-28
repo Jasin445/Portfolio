@@ -1,10 +1,9 @@
 'use client'
-import { HeroProps } from "@/types";
 import Button from "./CallToActionButtons/Button";
 import { Typewriter } from "react-simple-typewriter";
 import { heroText } from "@/data";
 
-export default function Hero({ title, page }: HeroProps) {
+export default function Hero() {
   return (
     <section
       style={{
