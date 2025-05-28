@@ -3,19 +3,47 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: transparent;
+  --foreground: #ffff;
+  --destructive: #ef798a;
+  --primary: 17 24 39; 
+  --secondary: #7d7df5;
+  --text: 255 255 255; 
+  --border: 209 213 219;
+  --accent: 239 68 68;
+  --card-background: 249 250 251;
+  --mobile-nav: #000000;
+  --button-gray: #1F2937;
+--button-gray-hover: #111827;
+--button-blue: #3B82F6;
+--button-blue-hover: #2563EB; 
 }
 
-@media (prefers-color-scheme: dark) {
+html.dark {
+  --background: #171717;
+  --foreground: #ffffff; 
+   --mobile-nav: #0000;
+   --button-gray: #1F2937;
+  --button-gray-hover: #111827;
+  --button-blue: #2563EB;
+  --button-blue-hover: #1D4ED8;
+
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  @apply antialiased;
 }
+
+
+/* Optional overlay to soften pattern if needed */
+
