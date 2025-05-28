@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { NavLinkProps } from "../../types";
 import { cn } from "@/utils";
-import { useState } from "react";
 import { usePathname } from "next/navigation";
 import ContactLink from "./contactLink";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import * as AccordionPrimitive from "@radix-ui/react-accordion";
-import { BiChevronDown, BiChevronUp } from "react-icons/bi";
+import { BiChevronDown } from "react-icons/bi";
 
 const Accordion = () => {
   return (

@@ -1,6 +1,5 @@
 'use client'
 import { HeroProps } from "@/types";
-import Link from "next/link";
 import Button from "./CallToActionButtons/Button";
 import { Typewriter } from "react-simple-typewriter";
 import { heroText } from "@/data";

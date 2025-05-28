@@ -1,8 +1,6 @@
 "use client";
 
 import { MobileProps } from "@/types";
-import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
 import Button from "../CallToActionButtons/Button";
 
 const ContactLink: React.FC<MobileProps> = ({ isMobileOpen }) => {

@@ -1,6 +1,5 @@
 // import About from "@/components/About";
 
-import CustomAccordion from "@/components/ui/accordion";
 
 export const metadata = {
   title: "About",

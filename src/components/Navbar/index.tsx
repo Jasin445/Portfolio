@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Navlinks from "./Navlinks";
 import { navbarLinks, navbarVariants } from "@/data";
 import { NavbarProps } from "@/types";
@@ -8,7 +8,6 @@ import { cn } from "@/utils";
 import MobileToggle from "./MobileToggle";
 import MobileNavlinks from "./MobileNavlinks";
 import Logo from "../Logo";
-import { useTheme } from "next-themes";
 import ContactLink from "./contactLink";
 
 const Navbar: React.FC<NavbarProps> = ({ className, variant }) => {

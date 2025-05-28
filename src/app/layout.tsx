@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import "@/app/globals.css";
-import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/Navbar";
-import { themeScript } from "@/data";
 
 export const metadata: Metadata = {
   title: {
     default: "Jason Dagana",
-    template: "%s | JasonDagana",
+    template: "%s | Jason Dagana",
   },
   description: "Portfolio of Jason Dagana, a passionate full-stack developer.",
   keywords: ["Full-stack developer", "Next.js", "Tailwind CSS", "Portfolio"],

@@ -1,6 +1,5 @@
 
 import { MobileProps } from "@/types";
-import Logo from "../Logo";
 import Navlinks from "./Navlinks";
 import { navbarLinks } from "@/data";
 import { cn } from "@/utils";

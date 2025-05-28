@@ -1,5 +1,5 @@
-import { cva, VariantProps } from "class-variance-authority";
-import { Navlinks, Variants } from "@/types/index";
+import { cva } from "class-variance-authority";
+import { Navlinks } from "@/types/index";
 
 export const navbarLinks: Navlinks[] = [
   { link: "Home", to: "/" },

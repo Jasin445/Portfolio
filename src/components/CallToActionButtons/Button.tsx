@@ -1,7 +1,6 @@
 import { buttonVariants } from "@/data";
 import { ButtonProps } from "@/types";
 import { cn } from "@/utils";
-import { VariantProps } from "class-variance-authority";
 import Link from "next/link";
 import React, { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react";
 
