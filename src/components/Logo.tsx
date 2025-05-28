@@ -5,7 +5,7 @@ interface LogoProps {
   isMobileOpen: boolean;
 }
 
-const Logo: React.FC<LogoProps> = ({ className, isMobileOpen }) => {
+const Logo: React.FC<LogoProps> = ({ isMobileOpen }) => {
   console.log("logo: ", isMobileOpen)
   return (
     <h1 className={cn( 'md:text-2xl text-xl text-nowrap transition-all duration-1000', 
@@ -13,7 +13,7 @@ const Logo: React.FC<LogoProps> = ({ className, isMobileOpen }) => {
       "text-button-blue font-extrabold": isMobileOpen
     }
   )
-    }>Jason's Portfolio</h1>
+    }>Jason&apos;s Portfolio</h1>
   )
 }
 export default Logo

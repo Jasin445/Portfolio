@@ -19,7 +19,7 @@ export default function Hero() {
         maskImage: "radial-gradient(circle, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)",
       }} className="absolute w-[900px] h-[800px] top-[-190%] left-[-30%] border-b-indigo-900 bg-opacity-50" />
 
-      <h1 className="text-4xl md:text-6xl font-bold z-10">Hi, I'm Jason</h1>
+      <h1 className="text-4xl md:text-6xl font-bold z-10">Hi, I&apos;m Jason</h1>
       <p className="mt-4 text-lg md:text-xl max-w-xl z-10 text-white">
          <Typewriter delaySpeed={5015} words={heroText} />
         </p>
