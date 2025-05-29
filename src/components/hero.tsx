@@ -12,6 +12,7 @@ export default function Hero() {
         alt={"image of herobackground"}
         priority
         fill
+        className="object-cover"
       />
       <div className="absolute z-10 inset-0 bg-black bg-opacity-70" />
       <div className="z-20 overflow-hidden ">
