@@ -1,8 +1,20 @@
 "use client";
+import Head from "next/head";
 import Button from "./CallToActionButtons/Button";
 
 
 export default function Hero() {
+  const backgroundImageURL = '/light-bulbs-5488573.jpg'; // Path to your optimized background image
+  
+  <Head>
+         <link
+          rel="preload"
+          href={backgroundImageURL}
+          as="image"
+          type="image/jpg" // IMPORTANT: Specify the correct MIME type (e.g., image/jpeg, image/png)
+          crossOrigin="anonymous" // Essential if the image is served from a different domain (CDN)
+        />
+      </Head>
   return (
     <section
       style={{
