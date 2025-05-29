@@ -41,7 +41,7 @@ const HeroHome = () => {
         </div>
       </div>
       <div className="mt-9 flex gap-4 z-20 h-auto">
-        <Button size={"md"} variant="secondary">
+        <Button href='/about' size={"md"} variant="secondary">
           About Me
         </Button>
         <Button size={"md"} href="#projects">

@@ -73,7 +73,7 @@ export const themeScript =
   })();
 `;
 
-export const heroText = ["i'm a A front-end developer passionate about building user-friendly and impactful products.', 'a Problem Solver who puts in so much intuition to creating visually appealing nd functional websites that aids business growth, attracts clients, stakeholders and set you apart in the market place!', 'Helping startups build fast, scalable, and delightful web apps using modern JavaScript and design-first thinking."] 
+export const heroText = ["I'm a A front-end developer passionate about building user-friendly and impactful products.', 'a Problem Solver who puts in so much intuition to creating visually appealing nd functional websites that aids business growth, attracts clients, stakeholders and set you apart in the market place!', 'Helping startups build fast, scalable, and delightful web apps using modern JavaScript and design-first thinking."] 
 
 export const skills: Skills[] = [
     { name: "React", icon: FaReact, color: "text-blue-400" },
@@ -81,6 +81,8 @@ export const skills: Skills[] = [
     { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },
     { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-400" },
     { name: "Node.js", icon: FaNodeJs, color: "text-green-500" },
-  ];
+];
+  
+export const aboutMeText = [" Hello! I'm Jason Dagana, a passionate Front-end Developer based in Yenagoa, Nigeria. My journey into the world of web development began with a fascination for how digital products come to life and how they can solve real-world problems through intuitive user experiences. I thrive on bringing ideas from concept to reality, focusing on clean code, responsive design, and exceptional user interfaces.", "With a strong foundation in React and Next.js, I specialize in crafting dynamic and high-performance web applications. I leverage Tailwind CSS for rapid and consistent UI development, ensuring every pixel is in its place. My expertise extends to TypeScript, which helps me write robust and scalable code, and Node.js for building efficient backend services.", "I am always eager to learn new technologies and embrace challenges that push my boundaries. My goal is to contribute to projects that make a real difference, combining my technical skills with a keen eye for design to deliver products that users love. When I'm not coding, you can find me exploring new tech trends, contributing to open-source, or sketching new design concepts.", "I believe in continuous growth and the power of collaboration. If you're looking for a dedicated developer who cares deeply about user experience and code quality, let's connect!"]
 
 
