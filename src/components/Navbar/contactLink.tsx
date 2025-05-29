@@ -15,7 +15,7 @@ const ContactLink: React.FC<MobileProps> = ({ isMobileOpen }) => {
 // md:basis-[15%] basis-[100px]
   return (
     <Button href="/contact" size={'sm'}
-      className="hidden md:inline-block md:text-[17px] text-[14px]"
+      className="hidden md:inline-block md:text-[16px] text-[14px]"
     >
       Contact Me
     </Button>

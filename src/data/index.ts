@@ -36,9 +36,9 @@ export const buttonVariants = cva(
         secondary: "bg-button-gray rounded-xl font-normal text-foreground hover:bg-button-gray-hover"
       },
       size: {
-        xsm: 'px-4 py-1 text-[23px]',
-        sm: 'px-3 py-3 text-sm',
-        md: 'px-7 py-4 text-base',
+        xsm: 'px-4 py-1 text-[19px]',
+        sm: ' py-2 rounded-full px-4 text-sm',
+        md: 'px-3 py-3 text-base',
         lg: 'px-8 py-4.5 text-lg',
       },
     },

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg baseProfile="full" height="1024px" version="1.1" viewBox="0 0 1024 1024" width="1024px" xmlns="http://www.w3.org/2000/svg" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="rgb(0, 123, 255)" /><stop offset="1" stop-color="rgb(0, 90, 200)" /></linearGradient></defs><polygon fill="url(#gradient)" points="0,0 0,1023 1023,1023 1023,0" /></svg>

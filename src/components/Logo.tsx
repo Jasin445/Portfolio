@@ -1,4 +1,6 @@
 import { cn } from "@/utils";
+import Image from "next/image"
+import logo from "@/assets/logo-removebg-preview.png"
 
 interface LogoProps {
   className?: string;
@@ -6,14 +8,13 @@ interface LogoProps {
 }
 
 const Logo: React.FC<LogoProps> = ({ isMobileOpen }) => {
-  console.log("logo: ", isMobileOpen)
+  console.log("logo: ", isMobileOpen);
   return (
-    <h1 className={cn( 'md:text-2xl text-xl text-nowrap transition-all duration-1000', 
-      {
-      "text-button-blue font-extrabold": isMobileOpen
-    }
-  )
-    }>Jason&apos;s Portfolio</h1>
-  )
-}
-export default Logo
+    <div className="relative -ml-8 w-[120px] md:h-[90px] h-[70px] ">
+      <Image src={logo} alt={"image of logo"} fill priority
+      className="object-fill"/>
+    <div className="bg-black absolute inset-0 opacity-0"></div>
+    </div>
+  );
+};
+export default Logo;

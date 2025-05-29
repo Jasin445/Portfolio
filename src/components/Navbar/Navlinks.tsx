@@ -10,15 +10,15 @@ const NavLinks: React.FC<NavLinkProps> = ({ data, isMobileOpen }) => {
   const pathname = usePathname();
   console.log(pathname);
   const textClass =
-    "md:text-[20px] text-[23px] text-foreground group text-accent text-[18px] hover:text-button-blue";
+    "md:text-[15px] text-[19px] text-foreground group text-accent text-[18px] hover:text-button-blue";
   return (
     <ul
       className={cn(
         `basis-[60%] no-underline bg-mobile-nav transition-all duration-1000`,
         {
-          "hidden h-0 md:flex lg:gap-9 gap-5 justify-center items-center ":
+          "hidden h-0 md:flex gap-11 justify-center items-center ":
             !isMobileOpen,
-          "flex flex-col h-screen gap-14 w-full justify-center items-center ":
+          "flex flex-col h-screen gap-14 w-full justify-center items-center overflow-y-scroll ":
             isMobileOpen,
         }
       )}
