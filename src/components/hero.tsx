@@ -1,7 +1,6 @@
 "use client";
 import Button from "./CallToActionButtons/Button";
-import { Typewriter } from "react-simple-typewriter";
-import { heroText } from "@/data";
+
 
 export default function Hero() {
   return (
