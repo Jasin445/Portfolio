@@ -6,8 +6,8 @@ import Button from "../CallToActionButtons/Button";
 const ContactLink: React.FC<MobileProps> = ({ isMobileOpen }) => {
   
   if (isMobileOpen) {
-     return <Button href="/contact" size={'sm'}
-      className=" md:text-2xl text-3xl"
+     return <Button variant={'contact'}  href="/contact" size={'xsm'}
+      className=" md:text-2xl"
     >
       Contact Me
     </Button>

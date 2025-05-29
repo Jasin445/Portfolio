@@ -27,15 +27,17 @@ export const navbarVariants = cva(
 );
 
 export const buttonVariants = cva(
-  "inline-block text-nowrap text-foreground px-6 py-3 rounded-xl ",
+  "inline-block text-nowrap text-foreground px-6 py-3",
   {
     variants: {
       variant: {
-        primary: "bg-button-blue font-bold text-button-text hover:bg-button-blue-hover",
-        secondary: "bg-button-gray font-normal text-foreground hover:bg-button-gray-hover"
+        primary: "bg-button-blue font-bold rounded-xl text-button-text hover:bg-button-blue-hover",
+        contact: "bg-button-blue rounded-[999px] font-bold text-button-text hover:bg-button-blue-hover",
+        secondary: "bg-button-gray rounded-xl font-normal text-foreground hover:bg-button-gray-hover"
       },
       size: {
-        sm: 'px-4 py-3 text-sm',
+        xsm: 'px-4 py-1 text-[28px]',
+        sm: 'px-3 py-3 text-sm',
         md: 'px-7 py-4 text-base',
         lg: 'px-8 py-4.5 text-lg',
       },
@@ -69,4 +71,4 @@ export const themeScript =
   })();
 `;
 
-export const heroText = ['A front-end developer passionate about building user-friendly and impactful products.', 'a Problem Solver who puts in so much intuition to creating visually appealing nd functional websites that aids business growth, attracts clients, stakeholders and set you apart in the market place!', 'Helping startups build fast, scalable, and delightful web apps using modern JavaScript and design-first thinking.'] 
+export const heroText = ["i'm a A front-end developer passionate about building user-friendly and impactful products.', 'a Problem Solver who puts in so much intuition to creating visually appealing nd functional websites that aids business growth, attracts clients, stakeholders and set you apart in the market place!', 'Helping startups build fast, scalable, and delightful web apps using modern JavaScript and design-first thinking."] 

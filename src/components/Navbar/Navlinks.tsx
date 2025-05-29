@@ -10,7 +10,7 @@ const NavLinks: React.FC<NavLinkProps> = ({ data, isMobileOpen }) => {
   const pathname = usePathname();
   console.log(pathname);
   const textClass =
-    "md:text-2xl text-3xl text-foreground group text-accent text-[18px] hover:text-button-blue";
+    "md:text-2xl text-[30px] text-foreground group text-accent text-[18px] hover:text-button-blue";
   return (
     <ul
       className={cn(
