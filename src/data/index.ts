@@ -1,5 +1,7 @@
 import { cva } from "class-variance-authority";
-import { Navlinks } from "@/types/index";
+import { Navlinks, Skills } from "@/types/index";
+import { FaNodeJs, FaReact } from "react-icons/fa";
+import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 export const navbarLinks: Navlinks[] = [
   { link: "Home", to: "/" },
@@ -72,3 +74,13 @@ export const themeScript =
 `;
 
 export const heroText = ["i'm a A front-end developer passionate about building user-friendly and impactful products.', 'a Problem Solver who puts in so much intuition to creating visually appealing nd functional websites that aids business growth, attracts clients, stakeholders and set you apart in the market place!', 'Helping startups build fast, scalable, and delightful web apps using modern JavaScript and design-first thinking."] 
+
+export const skills: Skills[] = [
+    { name: "React", icon: FaReact, color: "text-blue-400" },
+    { name: "Next.js", icon: SiNextdotjs, color: "text-gray-300" },
+    { name: "TypeScript", icon: SiTypescript, color: "text-blue-500" },
+    { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-cyan-400" },
+    { name: "Node.js", icon: FaNodeJs, color: "text-green-500" },
+  ];
+
+

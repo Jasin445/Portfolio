@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import "@/app/globals.css";
-import Navbar from "@/components/Navbar";
+import LoadingScreen from "@/components/loadingScreen";
 
 export const metadata: Metadata = {
   title: {
@@ -58,9 +58,12 @@ export default function RootLayout({
             width: "100%",
           }}
         />
-         <div className="absolute inset-0 w-full -z-50 bg-white bg-opacity-20 dark:bg-black dark:bg-opacity-30" />
-          <Navbar />
+        <div className="absolute inset-0 w-full -z-50 bg-white bg-opacity-20 dark:bg-black dark:bg-opacity-30" />
+          
+        <LoadingScreen>
           {children}
+        </LoadingScreen>
+
        
       </body>
     </html>

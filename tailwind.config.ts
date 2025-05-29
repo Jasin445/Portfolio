@@ -14,6 +14,20 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        'pulse-scale': {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.2)' },
+        },
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
+      },
+       animation: {
+        'pulse-scale': 'pulse-scale 1.5s ease-in-out infinite',
+        // fadeOut: 'fadeOut 2.7s ease-in-out forwards 1.8s',
+      },
       fontFamily: {
         sans: ["var(--font-geist-sans)", "sans-serif"],
       },

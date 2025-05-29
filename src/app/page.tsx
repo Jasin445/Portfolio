@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <Hero page={"home"} />
 
       {/* <CustomAccordion /> */}
     </main>

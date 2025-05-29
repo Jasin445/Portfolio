@@ -1,4 +1,4 @@
-// import About from "@/components/About";
+import Hero from "@/components/hero";
 
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-      <div></div>
+      <Hero page={"about-me"}  />
 
   );
 }

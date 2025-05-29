@@ -1,6 +1,7 @@
 import { VariantProps } from "class-variance-authority";
 import { buttonVariants, navbarVariants } from "@/data";
 import { AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
+import { IconType } from "react-icons";
 
 export type Page = "Home" | "About" | "Contact" | "Project" | "Resume";
 export type Theme = "light" | "dark";
@@ -60,3 +61,9 @@ interface NativeButtonProps
 
 // === Combined Interface ===
 export type ButtonProps = AnchorButtonProps | NativeButtonProps;
+
+export interface Skills {
+  name: string;
+  icon: IconType;
+  color: string;
+  }

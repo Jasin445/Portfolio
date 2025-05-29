@@ -18,7 +18,7 @@ const NavLinks: React.FC<NavLinkProps> = ({ data, isMobileOpen }) => {
         {
           "hidden h-0 md:flex gap-11 justify-center items-center ":
             !isMobileOpen,
-          "flex flex-col h-screen gap-14 w-full justify-center items-center overflow-y-scroll ":
+          "flex flex-col h-screen gap-10 w-full justify-center items-center overflow-y-scroll":
             isMobileOpen,
         }
       )}
