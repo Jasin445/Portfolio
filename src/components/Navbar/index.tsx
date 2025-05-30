@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navlinks from "./Navlinks";
 import { navbarLinks, navbarVariants } from "@/data";
 import { NavbarProps } from "@/types";
@@ -12,20 +12,38 @@ import ContactLink from "./contactLink";
 
 const Navbar: React.FC<NavbarProps> = ({ className, variant }) => {
   const [isMobileOpen, setIsMobileOpen] = useState<boolean>(false);
+  const [isOpaque, setIsOpaque] = useState<boolean>(false);
 
+  useEffect(() => {
+    const changeNavBackground = () => {
+      if (window.scrollY > 20) {
+        setIsOpaque(true);
+      } else {
+        setIsOpaque(false)
+      }
+    };
+    window.addEventListener("scroll", changeNavBackground);
+
+    return () => window.removeEventListener("scroll", changeNavBackground);
+  }, [window.scrollY]);
+
+  console.log(isOpaque ? "opaque" : 'transparent')
 
   return (
     <section
-      className={cn(navbarVariants({ variant }), {
-        "bg-mobile-nav": isMobileOpen
-      },`${className}`)}
+      className={cn(
+        navbarVariants({ variant: isOpaque ? 'dark' : variant }),
+        {
+          "bg-mobile-nav": isMobileOpen,
+        },
+        `${className}`
+      )}
     >
       <div className="flex max-w-[1360px] mx-auto justify-between items-center w-full">
-       
-          <Logo isMobileOpen={isMobileOpen} />
-        
+        <Logo isMobileOpen={isMobileOpen} />
+
         <Navlinks data={navbarLinks} />
-        <ContactLink/>
+        <ContactLink />
         <MobileToggle
           isMobileOpen={isMobileOpen}
           setIsMobileOpen={setIsMobileOpen}

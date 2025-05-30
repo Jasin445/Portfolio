@@ -16,7 +16,7 @@ export const navbarVariants = cva(
     variants: {
       variant: {
         default: "bg-background text-foreground space-x-4",
-        dark: "bg-transparent text-foreground space-x-6 ",
+        dark: "bg-[#01040b] text-foreground space-x-6 ",
         light:
           "bg-transparent text-gray-800 text-foreground space-x-4 border-b border-gray-200",
         vertical: "flex-col items-start bg-gray-700 text-white space-y-2",
