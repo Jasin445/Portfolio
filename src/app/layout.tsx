@@ -56,9 +56,10 @@ export default function RootLayout({
             position: "fixed",
             zIndex: "-50",
             width: "100%",
+            height: '100vh'
           }}
         />
-        <div className="absolute inset-0 w-full -z-50 bg-white bg-opacity-20 dark:bg-black dark:bg-opacity-30" />
+        <div className="absolute inset-0 w-full h-screen -z-30 bg-black bg-opacity-95" />
           
         <LoadingScreen>
           {children}

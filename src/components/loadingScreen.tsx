@@ -23,7 +23,7 @@ export default function LoadingScreen({children }: PropsWithChildren) {
 }
 
     return (
-            <div className="fixed inset-0 z-50 flex items-center justify-center bg-background transition-opacity duration-700 animate-fadeOut">
+            <div className="fixed inset-0 z-50 flex items-center justify-center bg-transparent transition-opacity duration-700 animate-fadeOut">
                 <Image
                     src={Logo}
                     alt="JD Logo"
