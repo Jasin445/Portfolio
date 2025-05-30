@@ -16,7 +16,7 @@ const HeroAbout = () => {
       <div className="absolute inset-0 bg-black opacity-60" />
 
       <main className="min-h-screen md:pt-52 pt-20 text-white z-10">
-        <h1 className="text-4xl md:text-5xl font-bold text-center md:mb-12 mb-4">
+        <h1 className="text-2xl md:text-5xl font-bold text-center md:mb-12 mb-4">
           About Me
         </h1>
 

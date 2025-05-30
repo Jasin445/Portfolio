@@ -6,11 +6,17 @@ import { cn } from "@/utils";
 import { usePathname } from "next/navigation";
 import ContactLink from "./contactLink";
 
-const NavLinks: React.FC<NavLinkProps> = ({ data, isMobileOpen }) => {
+const NavLinks: React.FC<NavLinkProps> = ({ data, isMobileOpen, setIsMobileOpen }) => {
   const pathname = usePathname();
   console.log(pathname);
   const textClass =
     "md:text-[15px] text-[19px] text-foreground group text-accent text-[18px] hover:text-button-blue";
+  
+  const handleCloseMobileNav = () => {
+    if (isMobileOpen) {
+      setIsMobileOpen!(false)
+    }
+  }
   return (
     <ul
       className={cn(
@@ -26,8 +32,8 @@ const NavLinks: React.FC<NavLinkProps> = ({ data, isMobileOpen }) => {
       {data.map((links) => {
         const isActive = links.to === pathname;
         return (
-          <li className="" key={links.link}>
-            <Link className={textClass} href={links.to}>
+          <li key={links.link}>
+            <Link onClick={handleCloseMobileNav} className={textClass} href={links.to}>
               {links.link}
             </Link>
             <div
