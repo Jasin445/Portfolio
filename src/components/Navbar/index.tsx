@@ -20,7 +20,7 @@ const Navbar: React.FC<NavbarProps> = ({ className, variant }) => {
         "bg-mobile-nav": isMobileOpen
       },`${className}`)}
     >
-      <div className="flex justify-between items-center w-full">
+      <div className="flex max-w-[1360px] mx-auto justify-between items-center w-full">
        
           <Logo isMobileOpen={isMobileOpen} />
         
