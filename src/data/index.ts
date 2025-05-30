@@ -52,27 +52,6 @@ export const buttonVariants = cva(
 )
 
 
-export const themeScript = 
-`
-  (function() {
-    // Check if localStorage is available
-    try {
-      var mode = localStorage.getItem('theme');
-      if (mode === 'dark' || mode === 'light') {
-        document.documentElement.classList.add(mode);
-        return;
-      }
-    } catch (e) {
-    
-    }
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.add('light'); // Ensure light is also set if no preference or explicitly light
-    }
-  })();
-`;
-
 export const heroText = ["I'm a A front-end developer passionate about building user-friendly and impactful products.', 'a Problem Solver who puts in so much intuition to creating visually appealing nd functional websites that aids business growth, attracts clients, stakeholders and set you apart in the market place!', 'Helping startups build fast, scalable, and delightful web apps using modern JavaScript and design-first thinking."] 
 
 export const skills: Skills[] = [
@@ -86,3 +65,126 @@ export const skills: Skills[] = [
 export const aboutMeText = [" Hello! I'm Jason Dagana, a passionate Front-end Developer based in Abuja, Nigeria. My journey into the world of web development began with a fascination for how digital products come to life and how they can solve real-world problems through intuitive user experiences. I thrive on bringing ideas from concept to reality, focusing on clean code, responsive design, and exceptional user interfaces.", "With a strong foundation in React and Next.js, I specialize in crafting dynamic and high-performance web applications. I leverage Tailwind CSS for rapid and consistent UI development, ensuring every pixel is in its place. My expertise extends to TypeScript, which helps me write robust and scalable code, and Node.js for building efficient backend services.", "I am always eager to learn new technologies and embrace challenges that push my boundaries. My goal is to contribute to projects that make a real difference, combining my technical skills with a keen eye for design to deliver products that users love. When I'm not coding, you can find me exploring new tech trends, contributing to open-source, or sketching new design concepts.", "I believe in continuous growth and the power of collaboration. If you're looking for a dedicated developer who cares deeply about user experience and code quality, let's connect!"]
 
 
+export interface Projects {
+        image: {
+            src: string;
+            alt: string;
+        };
+        title: string;
+        description: string;
+        technologies: string[];
+        links: ({
+            text: string;
+            url: string;
+            icon: string;
+        } | {
+            text: string;
+            url: string;
+            icon?: undefined;
+        })[];
+  
+}
+
+export const projects: Projects[] = 
+  [
+    { // FIRST PROJECT (UNCHANGED)
+      "image": {
+        "src": "/home-office-1867761.jpg",
+        "alt": "Laptop displaying an e-commerce dashboard with charts and analytics"
+      },
+      "title": "E-commerce Dashboard",
+      "description": "A comprehensive admin dashboard for managing online stores with real-time analytics, inventory management, and order...",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "Chart.js",
+        "Tailwind CSS"
+      ],
+      "links": [
+        {
+          "text": "Live Demo",
+          "url": "#",
+          "icon": "arrow_right"
+        },
+        // {
+        //   "text": "GitHub",
+        //   "url": "#"
+        // }
+      ]
+    },
+    { // SECOND PROJECT
+      "image": {
+        "src": "/office-925806.jpg", // Different image
+        "alt": "Mobile app displaying weather forecast" // Different alt text
+      },
+      "title": "Weather Forecast App", // Different title
+      "description": "A sleek and responsive mobile-first weather application providing real-time conditions and 7-day forecasts.", // Different description
+      "technologies": [
+        "Vue.js",
+        "JavaScript",
+        "OpenWeather API",
+        "CSS Modules"
+      ],
+      "links": [
+        {
+          "text": "View App",
+          "url": "#",
+          "icon": "arrow_right"
+        },
+        {
+          "text": "Code",
+          "url": "#"
+        }
+      ]
+    },
+    { // THIRD PROJECT
+      "image": {
+        "src": "/home-office-1867761.jpg", // Different image
+        "alt": "Code editor screenshot with syntax highlighting" // Different alt text
+      },
+      "title": "Task Management CLI", // Different title
+      "description": "A command-line interface tool built for developers to efficiently track daily tasks and project progress.", // Different description
+      "technologies": [
+        "Node.js",
+        "Commander.js",
+        "MongoDB",
+        "CLI"
+      ],
+      "links": [
+        {
+          "text": "Docs",
+          "url": "#",
+          "icon": "arrow_right"
+        },
+        {
+          "text": "GitHub Repo",
+          "url": "#"
+        }
+      ]
+    },
+    { // FOURTH PROJECT
+      "image": {
+        "src": "/office-925806.jpg", // Different image
+        "alt": "Kanban board for project management" // Different alt text
+      },
+      "title": "Simple CRM System", // Different title
+      "description": "A basic customer relationship management system to organize contacts, manage leads, and track interactions.", // Different description
+      "technologies": [
+        "Python",
+        "Django",
+        "SQLite",
+        "Bootstrap"
+      ],
+      "links": [
+        {
+          "text": "Explore",
+          "url": "#",
+          "icon": "arrow_right"
+        },
+        {
+          "text": "Source",
+          "url": "#"
+        }
+      ]
+    }
+  ]
