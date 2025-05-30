@@ -15,9 +15,9 @@ const HeroHome = () => {
         fill
         className="object-cover object-top"
       />
-      <div className="absolute z-10 inset-0 bg-black bg-opacity-30 " />
+      <div className="absolute z-10 inset-0 bg-black bg-opacity-30" />
 
-      <div className="z-20 flex flex-col justify-center items-center">
+      <div className="z-20 flex flex-col justify-center items-center  bg-[rgba(0,0,0,0.1)]">
         <h1 className="text-3xl md:text-6xl font-bold z-10">
           Hi, I&apos;m Jason Dagana
         </h1>

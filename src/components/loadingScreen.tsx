@@ -10,7 +10,7 @@ export default function LoadingScreen({children }: PropsWithChildren) {
     const timerRef = useRef<NodeJS.Timeout | null>(null)
 
     useEffect(() => {
-        timerRef.current = setTimeout(() => setIsLoading(false), 2000) // 2s loader
+        timerRef.current = setTimeout(() => setIsLoading(false), 1000) // 2s loader
         return () => clearTimeout(timerRef.current!)
     }, [])
 
