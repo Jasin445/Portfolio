@@ -44,7 +44,7 @@ const HeroHome = () => {
         <Button href='/about' size={"md"} variant="secondary">
           About Me
         </Button>
-        <Button size={"md"} href="#projects">
+        <Button size={"md"} href="/projects">
           View Projects
         </Button>
       </div>
