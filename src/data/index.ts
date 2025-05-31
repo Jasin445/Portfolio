@@ -1,7 +1,8 @@
 import { cva } from "class-variance-authority";
 import { Navlinks, Skills } from "@/types/index";
-import { FaNodeJs, FaReact } from "react-icons/fa";
+import { FaArrowRight, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { IconType } from "react-icons";
 
 export const navbarLinks: Navlinks[] = [
   { link: "Home", to: "/" },
@@ -38,7 +39,7 @@ export const buttonVariants = cva(
         secondary: "bg-button-gray rounded-xl font-normal text-foreground hover:bg-button-gray-hover"
       },
       size: {
-        xsm: 'px-4 py-1 text-[19px]',
+        xsm: 'px-4 py-2 md:text-[16px] text-[14px]',
         sm: ' py-2 rounded-full px-4 text-sm',
         md: 'px-3 py-3 text-base',
         lg: 'px-8 py-4.5 text-lg',
@@ -76,7 +77,7 @@ export interface Projects {
         links: ({
             text: string;
             url: string;
-            icon: string;
+            icon: IconType;
         } | {
             text: string;
             url: string;
@@ -104,12 +105,8 @@ export const projects: Projects[] =
         {
           "text": "Live Demo",
           "url": "#",
-          "icon": "arrow_right"
+          "icon": FaArrowRight
         },
-        // {
-        //   "text": "GitHub",
-        //   "url": "#"
-        // }
       ]
     },
     { // SECOND PROJECT
@@ -127,14 +124,10 @@ export const projects: Projects[] =
       ],
       "links": [
         {
-          "text": "View App",
+          "text": "Live Demo",
           "url": "#",
-          "icon": "arrow_right"
+          "icon": FaArrowRight
         },
-        {
-          "text": "Code",
-          "url": "#"
-        }
       ]
     },
     { // THIRD PROJECT
@@ -152,14 +145,10 @@ export const projects: Projects[] =
       ],
       "links": [
         {
-          "text": "Docs",
+          "text": "Live Demo",
           "url": "#",
-          "icon": "arrow_right"
+          "icon": FaArrowRight
         },
-        {
-          "text": "GitHub Repo",
-          "url": "#"
-        }
       ]
     },
     { // FOURTH PROJECT
@@ -177,14 +166,10 @@ export const projects: Projects[] =
       ],
       "links": [
         {
-          "text": "Explore",
+          "text": "Live Demo",
           "url": "#",
-          "icon": "arrow_right"
+          "icon": FaArrowRight
         },
-        {
-          "text": "Source",
-          "url": "#"
-        }
       ]
     }
   ]

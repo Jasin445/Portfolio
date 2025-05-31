@@ -2,6 +2,7 @@ import { Projects } from "@/data";
 import Image from "next/image";
 import Button from "../CallToActionButtons/Button";
 import { FaArrowRight } from "react-icons/fa";
+import { IconType } from "react-icons";
 
 interface ProjectCardProps {
   data?: Projects[];
@@ -13,7 +14,7 @@ interface StackCardProps {
 
 const StackCard: React.FC<StackCardProps> = ({ technologies }) => {
   return (
-    <section className="flex flex-wrap gap-4">
+    <section className="flex flex-wrap gap-2">
       {technologies.map((data) => {
         return (
           <span
@@ -31,7 +32,7 @@ const StackCard: React.FC<StackCardProps> = ({ technologies }) => {
 const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
   console.log(data);
   return (
-    <section className=" pb-16 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-w-[1280px] w-full gap-7 mx-auto text-left md:px-9 px-4">
+    <section className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-w-[1280px] w-full gap-7 mx-auto text-left">
       {data?.map((project) => {
         return (
           <div
@@ -48,9 +49,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
               />
             </div>
 
-            <div className="px-6 pb-9 flex flex-col gap-6">
+            <div className="px-6 pb-9 flex flex-col md:gap-6 gap-3">
               <div>
-                <h1 className="font-bold text-[26px] mb-2">{project.title}</h1>
+                <h1 className="font-bold md:text-[26px] text-[23px] mb-2">{project.title}</h1>
                 <p>{project.description}</p>
               </div>
               <div>
@@ -59,14 +60,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data }) => {
 
               <div className="flex  flex-wrap gap-5">
                 {project.links.map((link) => {
+                  const Icon = link.icon
                   return (
-                      <Button key={link.text} className={"flex items-center gap-2" } variant={"primary"} href={link.url}>
+                      <Button key={link.text} className={"flex md:mt-0 mt-2 items-center gap-2" } variant={"primary"} size={"xsm"} href={link.url}>
                       
                         {link.text}
-                        <FaArrowRight size={14} />
+                      {Icon && <Icon  />}
         
                     </Button>
-                  );
+                  );  
                 })}
               </div>
             </div>
