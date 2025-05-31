@@ -25,7 +25,7 @@ const Navbar: React.FC<NavbarProps> = ({ className, variant }) => {
     window.addEventListener("scroll", changeNavBackground);
 
     return () => window.removeEventListener("scroll", changeNavBackground);
-  }, [window.scrollY]);
+  }, []);
 
   console.log(isOpaque ? "opaque" : 'transparent')
 
