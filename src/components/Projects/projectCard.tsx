@@ -85,7 +85,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 className={"flex md:mt-0 mt-2 items-center gap-2"}
                 variant={"primary"}
                 size={"xsm"}
-                href={link.url}
+                    href={link.url}
+                    target="blank"
               >
                 {link.text}
                 {Icon && <Icon />}
