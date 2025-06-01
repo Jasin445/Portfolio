@@ -1,6 +1,5 @@
-import { projects } from "@/data";
 import BackgroundImg from "../backgroundImg";
-import ProjectCard from "./projectCard";
+import Projects from "./projects";
 
 const HeroProjects = () => {
   return (
@@ -11,10 +10,10 @@ const HeroProjects = () => {
           My Projects
         </h1>
         <p className="md:text-xl text-[17px] font-semibold opacity-80 lg:mb-20 md:mb-9 mb-8 max-w-[600px] mx-auto">
-          Here&apos;s a collection of live projects I&apos;ve worked on, showcasing my skills
+          Here&apos;s a collection of projects I&apos;ve worked on, showcasing my skills
           in modern web development and problem-solving.
         </p>
-        <ProjectCard data={projects} />
+        <Projects />
       </main>
     </section>
   );
