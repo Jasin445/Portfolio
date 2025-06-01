@@ -27,7 +27,7 @@ export default function LoadingScreen({children }: PropsWithChildren) {
                 <Image
                     src={Logo}
                     alt="JD Logo"
-                    width={300}
+                    width={250}
                     height={100}
                     className="animate-pulse-scale"
                 />
