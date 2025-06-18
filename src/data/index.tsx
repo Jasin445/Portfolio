@@ -236,44 +236,49 @@ export const developmentJourneyProjects: JourneyProject[] = [
 
   // --- HTML_CSS_FOUNDATIONS Stage ---
   {
-    id: "html-css-landing-page",
-    title: "Responsive Landing Page",
+    id: "everything-gadget",
+    title: "Everything Gadget Accessories Store",
     description:
-      "This project was my introduction to CSS, focusing on styling, layout (Flexbox), and making designs responsive for different screen sizes. I learned about selectors, properties, and media queries.",
+      "This project was one of the first projects that i completed all on my own using HTML and CSS, focusing on styling, layout (Flexbox), and making designs responsive for different screen sizes. I learned the process of responsive layout",
     technologies: ["HTML5", "CSS3", "Flexbox", "Responsive Design"],
     stage: "HTML_CSS_FOUNDATIONS",
     image: {
-      src: "/office-925806.jpg",
+      src: "/downloadrr.png",
       alt: "Screenshot of a responsive landing page",
     },
-    links: [
-      {
-        text: "GitHub Repo",
-        url: "https://github.com/yourusername/responsive-landing-page",
-        icon: FaGithub,
-      },
+    links: [  
       {
         text: "Live Demo",
-        url: "https://yourusername.github.io/responsive-landing-page/",
+        url: "https://jasin445.github.io/Everything_Gadget/",
         icon: FaExternalLinkAlt,
+      },
+      {
+        text: "GitHub Repo",
+        url: "https://github.com/Jasin445/Everything_Gadget",
+        icon: FaGithub,
       },
     ],
   },
   {
-    id: "html-css-blog-layout",
-    title: "Blog Layout Design",
+    id: "vidchill-dashboard",
+    title: "Vidchill Creator Dashboard Page",
     description:
-      "Practiced advanced CSS techniques like Grid for complex layouts, custom fonts, and basic animations to create an appealing blog post structure.",
-    technologies: ["HTML5", "CSS3", "CSS Grid"],
+      "I leveraged advanced HTML and CSS techniques like Grid and Flexbox for complex layouts and for responsive tabulated data.",
+    technologies: ["HTML5", "CSS3", "CSS Grid", "Flexbox"],
     stage: "HTML_CSS_FOUNDATIONS",
     image: {
-      src: "/office-925806.jpg",
+      src: "/downloadiui.png",
       alt: "Screenshot of a blog layout",
     },
     links: [
       {
+        text: "Live Demo",
+        url: "https://jasin445.github.io/dashboard/",
+        icon: FaExternalLinkAlt,
+      },
+      {
         text: "GitHub Repo",
-        url: "https://github.com/yourusername/blog-layout-design",
+        url: "https://github.com/Jasin445/dashboard",
         icon: FaGithub,
       },
     ],
@@ -281,65 +286,93 @@ export const developmentJourneyProjects: JourneyProject[] = [
 
   // --- JAVASCRIPT_FUNDAMENTALS Stage ---
   {
-    id: "js-calculator",
-    title: "Interactive Calculator",
+    id: "countries-app",
+    title: "All Countries App",
     description:
-      "My first dive into JavaScript! I built a fully functional calculator, learning about DOM manipulation, event listeners, basic arithmetic operations, and handling user input.",
+      "My first dive into JavaScript! I built a fully functional Countries app where you could search for any country in the world and check foe specific informations, learning about DOM manipulation, event listeners, basic arithmetic operations, and handling user input.",
     technologies: ["HTML5", "CSS3", "JavaScript (Vanilla)"],
     stage: "JAVASCRIPT_FUNDAMENTALS",
     image: {
-      src: "/office-925806.jpg",
-      alt: "Screenshot of an interactive calculator",
+      src: "/countries.png",
+      alt: "Screenshot of a countries app",
     },
     links: [
       {
-        text: "GitHub Repo",
-        url: "https://github.com/yourusername/js-calculator",
-        icon: FaGithub,
+        text: "Live Demo",
+        url: "https://jasin445.github.io/countries/",
+        icon: FaExternalLinkAlt,
       },
       {
-        text: "Live Demo",
-        url: "https://yourusername.github.io/js-calculator/",
-        icon: FaExternalLinkAlt,
+        text: "GitHub Repo",
+        url: "https://github.com/Jasin445/countries",
+        icon: FaGithub,
       },
     ],
   },
   {
-    id: "js-todo-list",
+    id: "js-todo-app",
     title: "Dynamic To-Do List",
     description:
-      "Implemented a to-do list with JavaScript, focusing on adding, deleting, and marking tasks as complete. This taught me about array methods, local storage, and dynamic UI updates.",
+      "Implemented a to-do list with JavaScript, focusing on adding, deleting tasks. This taught me about array methods, local storage, and dynamic UI updates.",
     technologies: ["HTML5", "CSS3", "JavaScript (Vanilla)", "Local Storage"],
     stage: "JAVASCRIPT_FUNDAMENTALS",
     image: {
-      src: "/office-925806.jpg",
+      src: "/todo-img.png",
       alt: "Screenshot of a dynamic to-do list",
     },
     links: [
       {
+        text: "Live Demo",
+        url: "https://jasin445.github.io/to-do-app/",
+        icon: FaExternalLinkAlt,
+      },
+      {
         text: "GitHub Repo",
-        url: "https://github.com/yourusername/js-todo-list",
+        url: "https://github.com/Jasin445/to-do-app",
         icon: FaGithub,
       },
     ],
   },
-
+  {
+    id: "countdown-giveaway",
+    title: "Giveaway Countdown Page",
+    description:
+      "Implemented a countdown timer for a phone giveaway event with JavaScript, focusing on countingdown in intervals and logging a message when the giveaway finally ends.",
+    technologies: ["HTML5", "CSS3", "JavaScript (Vanilla)", "Local Storage"],
+    stage: "JAVASCRIPT_FUNDAMENTALS",
+    image: {
+      src: "/give-away.png",
+      alt: "Screenshot of a dynamic to-do list",
+    },
+    links: [
+      {
+        text: "Live Demo",
+        url: "https://jasin445.github.io/countdown/",
+        icon: FaExternalLinkAlt,
+      },
+      {
+        text: "GitHub Repo",
+        url: "https://github.com/Jasin445/countdown",
+        icon: FaGithub,
+      },
+    ],
+  },
   // --- REACT_BASICS Stage ---
   {
-    id: "react-expense-tracker",
-    title: "React Expense Tracker",
+    id: "tic-tac-toe",
+    title: "Tic-Tac-Toe Game",
     description:
-      "My first project using React! I built an expense tracker to understand component-based architecture, state management with `useState`, and passing props between components.",
-    technologies: ["React", "JavaScript", "CSS Modules"],
+      "My first project using React! I built an awesome game called Tic-Tac-Toe, where i got to understand component-based architecture, state management with `useState`, and passing props between components.",
+    technologies: ["React", "JavaScript", "CSS3"],
     stage: "REACT_BASICS",
     image: {
-      src: "/office-925806.jpg",
-      alt: "Screenshot of a React expense tracker",
+      src: "/tic-tac-toe.png",
+      alt: "Screenshot of tic-tac-toe game",
     },
     links: [
       {
         text: "GitHub Repo",
-        url: "https://github.com/yourusername/react-expense-tracker",
+        url: "https://github.com/Jasin445/Tic-Tac-Toe",
         icon: FaGithub,
       },
     ],
